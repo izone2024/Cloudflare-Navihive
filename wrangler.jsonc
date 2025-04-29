@@ -1,18 +1,18 @@
-/**
- * For more details on how to configure Wrangler, refer to:
- * https://developers.cloudflare.com/workers/wrangler/configuration/
- */
+/
+* 更多关于如何配置 Wrangler 的详细信息，请参阅：
+https://developers.cloudflare.com/workers/wrangler/configuration/
+* /
 {
-    "$schema": "node_modules/wrangler/config-schema.json",
+    "schema": "node_modules/wrangler/config-schema.json",
     "name": "navihive",
     "main": "worker/index.ts",
-    "compatibility_date": "2025-04-05",
-    "assets": {
+    "兼容日期": "2025-04-05",
+    "资产": {
         "not_found_handling": "single-page-application"
-    },
-    "observability": {
-        "enabled": true
-    },
+    }
+    "可观测性": {
+        "启用": true
+    }
     // D1数据库绑定
     "d1_databases": [
         {
@@ -27,4 +27,4 @@
         "AUTH_PASSWORD": "linuxdo",
         "AUTH_SECRET": "linuxdo"
     }
-}
+输入：}
